@@ -1,18 +1,18 @@
 <template>
   <div class="hello">
     <div class="leaderboard"> 
-          <div class="intro">
+          <div class="intro" v-if="currentStep == 0">
       <p class="text-center dark-gray">
         <strong class="ng-binding">See how you stack up!</strong>
       </p>
       <p class="text-center light dark-gray ng-binding">With Leaderboard, you can see how many blocks similar Brand Representatives are completing. Do your best to make it to the top of the group!</p>
-      <button class="outline default full-width ng-binding" ng-click="nextStep()">TRY IT OUT!</button>
+      <button class="outline default full-width ng-binding" @click="changeStep(1)">TRY IT OUT!</button>
       <!-- <span class="little-text">{{txc.leaderboardDisclaimer}}</span> -->
     </div>
   
 
   <!-- Step ONE --> 
-  <div ng-show="currentStep == 1" class="ng-hide">
+  <div v-if="currentStep == 1" class="ng-hide">
     <strong class="ng-binding">We're excited to have you!</strong>
     <p></p>
     <p class="ng-binding">First, pick a display name:</p>
@@ -25,8 +25,9 @@
       <button class="outline purple ng-binding" ng-click="generateName()"> GENERATE DISPLAY NAME</button>
     </div>
     <p class="little-text ng-binding">*This will be displayed publicly, so please remember that it must contain appropriate language and content, and if it references an individual’s identity, then that individual must be named on the Brand Affiliate Account.</p>
+  <button @click="changeStep(2)">go</button>
   </div>
-  <div>
+  <div v-if="currentStep == 2">
     <p class="ng-binding">Next, choose a picture to use: </p>
     <div class="avatars">
       <img src="https://www.nuskin.com/vg/avatars/avatar1.svg" alt="" class="avatar ng-scope notSelected"  data-avatar="1" >
@@ -73,9 +74,23 @@
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'avatarWizard', 
   props: {
     msg: String
+  },
+  data() {
+    return {
+      currentStep: 0
+    }
+  },
+    methods: {
+     changeStep(step) {
+       console.log("New step", step);
+       this.currentStep = step;
+     }
+  },
+  mounted(){
+    //this.changeStep(2)
   }
 }
 </script>
