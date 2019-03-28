@@ -1,32 +1,49 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
-    <p>
-      For a guide and recipes on how to configure / customize this project,<br>
-      check out the
-      <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
-    </p>
-    <h3>Installed CLI Plugins</h3>
-    <ul>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener">babel</a></li>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint" target="_blank" rel="noopener">eslint</a></li>
-    </ul>
-    <h3>Essential Links</h3>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank" rel="noopener">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank" rel="noopener">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank" rel="noopener">Twitter</a></li>
-      <li><a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a></li>
-    </ul>
-    <h3>Ecosystem</h3>
-    <ul>
-      <li><a href="https://router.vuejs.org" target="_blank" rel="noopener">vue-router</a></li>
-      <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a></li>
-      <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank" rel="noopener">vue-devtools</a></li>
-      <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
-    </ul>
+    <div class="leaderboard"> 
+
+  <div>
+    <p class="ng-binding">Next, choose a picture to use: </p>
+    <div class="avatars">
+      <img src="https://www.nuskin.com/vg/avatars/avatar1.svg" alt="" class="avatar ng-scope notSelected"  data-avatar="1" >
+      <img src="https://www.nuskin.com/vg/avatars/avatar2.svg" alt="" class="avatar ng-scope notSelected"  data-avatar="2" >
+      <img src="https://www.nuskin.com/vg/avatars/avatar3.svg" alt="" class="avatar ng-scope notSelected"  data-avatar="3" >
+      <img src="https://www.nuskin.com/vg/avatars/avatar4.svg" alt="" class="avatar ng-scope notSelected"  data-avatar="4" >
+      <img src="https://www.nuskin.com/vg/avatars/avatar5.svg" alt="" class="avatar ng-scope notSelected"  data-avatar="5" >
+      <img src="https://www.nuskin.com/vg/avatars/avatar6.svg" alt="" class="avatar ng-scope notSelected"  data-avatar="6" >
+      <img src="https://www.nuskin.com/vg/avatars/avatar7.svg" alt="" class="avatar ng-scope notSelected"  data-avatar="7" >
+      <img src="https://www.nuskin.com/vg/avatars/avatar8.svg" alt="" class="avatar ng-scope selected"  data-avatar="8" >
+      <img src="https://www.nuskin.com/vg/avatars/avatar9.svg" alt="" class="avatar ng-scope notSelected"  data-avatar="9" >
+      <img src="https://www.nuskin.com/vg/avatars/avatar10.svg" alt="" class="avatar ng-scope notSelected"  data-avatar="10">
+      <img src="https://www.nuskin.com/vg/avatars/avatar11.svg" alt="" class="avatar ng-scope notSelected"  data-avatar="11">
+      <img src="https://www.nuskin.com/vg/avatars/avatar12.svg" alt="" class="avatar ng-scope notSelected"  data-avatar="12">
+      <img src="https://www.nuskin.com/vg/avatars/avatar13.svg" alt="" class="avatar ng-scope notSelected"  data-avatar="13">
+      <img src="https://www.nuskin.com/vg/avatars/avatar14.svg" alt="" class="avatar ng-scope notSelected"  data-avatar="14">
+      <img src="https://www.nuskin.com/vg/avatars/avatar15.svg" alt="" class="avatar ng-scope notSelected"  data-avatar="15">
+      <img src="https://www.nuskin.com/vg/avatars/avatar16.svg" alt="" class="avatar ng-scope notSelected"  data-avatar="16">
+      <img src="https://www.nuskin.com/vg/avatars/avatar17.svg" alt="" class="avatar ng-scope notSelected"  data-avatar="17">
+      <img src="https://www.nuskin.com/vg/avatars/avatar18.svg" alt="" class="avatar ng-scope notSelected"  data-avatar="18">
+      <img src="https://www.nuskin.com/vg/avatars/avatar19.svg" alt="" class="avatar ng-scope notSelected"  data-avatar="19">
+      <img src="https://www.nuskin.com/vg/avatars/avatar20.svg" alt="" class="avatar ng-scope notSelected"  data-avatar="20">
+      <img src="https://www.nuskin.com/vg/avatars/avatar21.svg" alt="" class="avatar ng-scope notSelected"  data-avatar="21">
+      <img src="https://www.nuskin.com/vg/avatars/avatar22.svg" alt="" class="avatar ng-scope notSelected"  data-avatar="22">
+      <img src="https://www.nuskin.com/vg/avatars/avatar23.svg" alt="" class="avatar ng-scope notSelected"  data-avatar="23">
+      <img src="https://www.nuskin.com/vg/avatars/avatar24.svg" alt="" class="avatar ng-scope notSelected"  data-avatar="24">
+      <img src="https://www.nuskin.com/vg/avatars/avatar25.svg" alt="" class="avatar ng-scope notSelected"  data-avatar="25">
+      <img src="https://www.nuskin.com/vg/avatars/avatar26.svg" alt="" class="avatar ng-scope notSelected"  data-avatar="26">
+      <img src="https://www.nuskin.com/vg/avatars/avatar27.svg" alt="" class="avatar ng-scope notSelected"  data-avatar="27">
+      <img src="https://www.nuskin.com/vg/avatars/avatar28.svg" alt="" class="avatar ng-scope notSelected"  data-avatar="28">
+      <img src="https://www.nuskin.com/vg/avatars/avatar29.svg" alt="" class="avatar ng-scope notSelected"  data-avatar="29">
+      <img src="https://www.nuskin.com/vg/avatars/avatar30.svg" alt="" class="avatar ng-scope notSelected"  data-avatar="30">
+      <img src="https://www.nuskin.com/vg/avatars/avatar31.svg" alt="" class="avatar ng-scope notSelected"  data-avatar="31">
+      <img src="https://www.nuskin.com/vg/avatars/avatar32.svg" alt="" class="avatar ng-scope notSelected"  data-avatar="32">
+      <img src="https://www.nuskin.com/vg/avatars/avatar33.svg" alt="" class="avatar ng-scope notSelected"  data-avatar="33">
+      <img src="https://www.nuskin.com/vg/avatars/avatar34.svg" alt="" class="avatar ng-scope notSelected"  data-avatar="34">
+      <img src="https://www.nuskin.com/vg/avatars/avatar35.svg" alt="" class="avatar ng-scope notSelected"  data-avatar="35">
+
+    </div> 
+  </div>
+  </div>
   </div>
 </template>
 
@@ -41,18 +58,169 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 40px 0 0;
+.leaderboard .avatars {
+  height: 300px;
+  border: 1px solid #bbbcbc;
+  padding: 10px 10px 0 10px;
+  overflow-y: scroll;
+  margin-top: 20px;
+  border-radius: 5px;
 }
-ul {
-  list-style-type: none;
+.leaderboard .avatars .avatar {
+  border-radius: 50%;
+  margin: 5px;
+  width: 50px;
+}
+.leaderboard .avatars .avatar:hover {
+  cursor: pointer;
+}
+.leaderboard .avatars .avatar.selected {
+  opacity: 1;
+}
+.leaderboard .avatars .avatar:not(.selected) {
+  opacity: .4;
+}
+.leaderboard .terms {
+  height: 300px;
+  border: 1px solid #bbbcbc;
+  padding: 10px 10px 0 10px;
+  overflow-y: scroll;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+.leaderboard .terms a {
+  color: #008AB0;
+  text-decoration: underline;
+}
+.leaderboard .button-wrapper, .leaderboard .text-center {
+  text-align: center;
+}
+.leaderboard .footer-buttons {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.leaderboard button {
+  font-size: 24px;
+  cursor: pointer;
+}
+.leaderboard button.full-width {
+  width: 100%;
+}
+.leaderboard button.outline, .leaderboard button.solid {
+  line-height: 4px;
+  padding: 10px;
+  border: 1px solid #272525;
+  min-height: 36px;
+  font-size: 16px;
+  min-width: 48%;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.leaderboard button.outline:first-child, .leaderboard button.solid:first-child {
+  margin-right: 10px;
+}
+.leaderboard button.solid {
+  background: #272525;
+  color: white;
+}
+.leaderboard button.purple {
+  color: #6521d4;
+  border-color: #6521d4;
+  font-size: 16px;
+  margin: 0 auto;
+  min-height: 0;
+  padding: 15px;
+  text-align: center;
+  float: none;
+}
+.leaderboard button.purple:hover {
+  background: #dbcaf7;
+}
+.leaderboard button:disabled {
+  background: #dcd9d9;
+  border: 1px #c1bcbc solid;
+  cursor: none;
+}
+.leaderboard .leaderboard-list {
   padding: 0;
 }
-li {
-  display: inline-block;
-  margin: 0 10px;
+.leaderboard .leaderboard-list.top-leaders {
+  box-shadow: inset 0 20px 60px -20px rgba(163, 163, 163, 0.8);
+  border-bottom: 3px solid #e7e7e7;
 }
-a {
-  color: #42b983;
+.leaderboard .leaderboard-list .leader-item {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 0 10px 20px;
 }
+.leaderboard .leaderboard-list .leader-item .number {
+  padding-right: 15px;
+  color: #BBBCBC;
+  min-width: 25px;
+  text-align: center;
+}
+.leaderboard .leaderboard-list .leader-item .avatar img {
+  border-radius: 50%;
+  margin-right: 15px;
+  height: 50px;
+  width: 50px;
+}
+.leaderboard .leaderboard-list .leader-item .display-name {
+  color: #272525;
+}
+.leaderboard .leaderboard-list .leader-item .display-name .edit {
+  display: none;
+}
+.leaderboard .leaderboard-list .leader-item .display-name .area {
+  display: block;
+  color: #A7A7A7;
+  font-weight: 300;
+  font-size: 14px;
+  margin-top: 5px;
+}
+.leaderboard .leaderboard-list .leader-item .blocks {
+  display: flex;
+  margin-left: auto;
+  align-self: center;
+  margin-right: 20px;
+}
+.leaderboard .leaderboard-list .leader-item .blocks img {
+  margin-right: 10px;
+}
+.leaderboard .leaderboard-list .leader-item.highlighted {
+  border-left: 3px solid #35B2F0;
+  background: #d7f0fb;
+  background: linear-gradient(to right, #d7f0fb 0%, #fbfbfb 85%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d7f0fb', endColorstr='#fbfbfb',GradientType=1 );
+}
+.leaderboard .leaderboard-list .leader-item.highlighted .number {
+  color: #272525;
+}
+.leaderboard .leaderboard-list .leader-item.highlighted .blocks {
+  color: #35B2F0;
+}
+.leaderboard .leaderboard-list .leader-item.highlighted .blocks img {
+  -webkit-filter: invert(0.08) sepia(1) saturate(8) hue-rotate(175deg);
+          filter: invert(0.08) sepia(1) saturate(8) hue-rotate(175deg);
+}
+.leaderboard .leaderboard-list .leader-item.highlighted:hover .edit {
+  display: inline-flex;
+  color: #35B2F0;
+}
+.leaderboard .leaderboard-list .leader-item.highlighted:hover .edit:hover {
+  cursor: pointer;
+}
+.leaderboard .median-blocks {
+  padding-top: 20px;
+}
+.leaderboard .median-blocks a {
+  color: #008AB0;
+  text-decoration: underline;
+}
+
 </style>
