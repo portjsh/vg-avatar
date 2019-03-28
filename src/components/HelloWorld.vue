@@ -1,7 +1,31 @@
 <template>
   <div class="hello">
     <div class="leaderboard"> 
+          <div class="intro">
+      <p class="text-center dark-gray">
+        <strong class="ng-binding">See how you stack up!</strong>
+      </p>
+      <p class="text-center light dark-gray ng-binding">With Leaderboard, you can see how many blocks similar Brand Representatives are completing. Do your best to make it to the top of the group!</p>
+      <button class="outline default full-width ng-binding" ng-click="nextStep()">TRY IT OUT!</button>
+      <!-- <span class="little-text">{{txc.leaderboardDisclaimer}}</span> -->
+    </div>
+  
 
+  <!-- Step ONE --> 
+  <div ng-show="currentStep == 1" class="ng-hide">
+    <strong class="ng-binding">We're excited to have you!</strong>
+    <p></p>
+    <p class="ng-binding">First, pick a display name:</p>
+    <label for="display_name" class="ng-binding">Display Name</label>
+    <input id="display_name" type="text" class="lb-text-box ng-pristine ng-untouched ng-valid" ng-model="userData.displayName">
+    <p class="text-center">
+      <strong class="ng-binding">Can't think of a display name? Let us help!</strong>
+    </p>
+    <div class="button-wrapper">
+      <button class="outline purple ng-binding" ng-click="generateName()"> GENERATE DISPLAY NAME</button>
+    </div>
+    <p class="little-text ng-binding">*This will be displayed publicly, so please remember that it must contain appropriate language and content, and if it references an individual’s identity, then that individual must be named on the Brand Affiliate Account.</p>
+  </div>
   <div>
     <p class="ng-binding">Next, choose a picture to use: </p>
     <div class="avatars">
@@ -44,7 +68,7 @@
     </div> 
   </div>
   </div>
-  </div>
+</div>
 </template>
 
 <script>
